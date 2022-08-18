@@ -1,0 +1,46 @@
+<header class="c-header">
+  <div class="l-headerwrap">
+    <div class="c-header__logo">
+      <a href="<%= BASE_URL %>index.html">
+        <span> Recruitment 2020</span>
+      </a>
+    </div>
+    <nav class="c-gnav pc-only">
+      <ul><% if (typeof linklists != 'undefined') { %><% linklists.main && linklists.main.forEach(link=> { %>
+        <li>
+          <a <% if (link.current || link.active) { %>class="is-active"<% }%>href="<%= link.url %>"><%= link.title %></a>
+        </li><% }) %><% } %>
+      </ul>
+    </nav>
+    <nav class="c-gnav tab-only">
+      <ul><% if (typeof linklists != 'undefined') { %><% linklists.main && linklists.main.forEach(link=> { %>
+        <li>
+          <a <% if (link.current || link.active) { %>class="is-active"<% }%>href="<%= link.url %>"><%= link.title %></a>
+        </li><% }) %><% } %>
+      </ul>
+    </nav>
+   
+    <div class="c-header__recruit">
+      <p>募集要項</p>
+    </div>
+
+    <div class="c-header__btn sp-only">
+      <div class="c-header__btnopen">
+        <img src="assets/img/menu.svg" alt="Icon menu">
+      </div>
+      <div class="c-header__btnclose">
+        <img src="assets/img/menuclose.svg" alt="Icon menu close">
+      </div>
+    </div>
+  </div>
+  <div class="c-menu">
+    <ul><% if (typeof linklists != 'undefined') { %><% linklists.main && linklists.main.forEach(link=> { %>
+      <li>
+        <a <% if (link.current || link.active) {%>class="is-active"<%} %>href="<%= link.url %>"><%= link.title %></a>
+      </li><% }) %><% } %>
+    </ul>
+    <div class="c-menu__recruit">
+      <p>募集要項</p>
+    </div>
+  </div>
+</header>

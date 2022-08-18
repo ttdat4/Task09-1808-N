@@ -1,0 +1,428 @@
+.c-service {
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+        display: inherit;
+    }
+
+    &__img {
+        max-width: 400px;
+        width: 100%;
+        margin-right: 40px;
+
+        @include tab {
+            max-width: 288px;
+            width: 100%;
+            margin-right: 19px;
+        }
+
+        @include sp {
+            max-width: 365px;
+            display: grid;
+            grid-template-columns: 48.77% 51.23%;
+            grid-template-rows: 120px 120px;
+            margin: 0 auto;
+        }
+
+        picture {
+            @include sp {
+                width: 100%;
+            }
+        }
+
+        &1 {
+            img {
+                margin-top: -3px;
+                @include tab {
+                    margin-top: 0;
+                }
+                @include sp {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &2 {
+            img {
+                margin-top: -41.5px;
+                @include tab {
+                    margin-top: 0;
+                }
+                @include sp {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &3 {
+            img {
+                margin-top: -1px;
+                
+                @include sp {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        &4 {
+            img {
+                margin-top: -1px;
+                @include tab {
+                    margin-top: 0;
+                }
+                @include sp {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        // picture:nth-child(odd) {
+        //     @include sp {
+        //         width: 48.77%;
+        //     }
+        // }
+
+        // picture:nth-child(even) {
+        //     @include sp {
+        //         width: 51.23%;
+        //     }
+        // }
+
+        
+    }
+
+    &__text {
+        max-width: 560px;
+        width: 100%;
+        margin-right: -40px;
+
+        @include tab {
+            max-width: 440px;
+            width: 100%;
+            margin-right: 0;
+        }
+
+        @include sp {
+            max-width: 100%;
+            padding: 0 20px 0 10px;
+            margin-right: 0;
+        }
+
+        &1 {
+            @include sp {
+                margin-bottom: 14px;
+            }
+        }
+
+        &9 {
+            font-size: 1.6rem;
+            font-weight: 300;
+
+            @include sp {
+                font-size: 1.4rem;
+                letter-spacing: 0;
+            }
+        }
+
+        &1title {
+            font-size: 1.8rem;
+            line-height: 1.67;
+            font-weight: 500;
+            margin-bottom: 10px;
+            position: relative;
+            text-indent: 17px;
+            padding-right: 5px;
+            letter-spacing: 0.03em;
+
+            @include tab {
+                margin-bottom: 8px;
+            }
+            @include sp {
+                font-size: 1.6rem;
+                line-height: 1.5;
+                font-weight: 600;
+                margin-bottom: 2px;
+                letter-spacing: 0;
+                margin-left: -2px;
+            }
+        }
+
+          
+
+
+        &1title::before {
+            content: "";
+            background: #3c3c3c;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 12px;
+            left: 1px;
+            border-radius: 100%;
+            @include sp {
+                width: 7px;
+                height: 7px;
+                top: 10px;
+                left: 3px;
+            }
+        }
+
+        &1sub {
+            line-height: 1.75;
+            margin: 0 0 15px 20px;
+            letter-spacing: 0.02em;
+            font-weight: 400;
+
+            @include tab {
+                font-size: 1.4rem;
+                margin: 0 0 9px 20px;
+            }
+
+            @include sp {
+                line-height: 1.33;
+                margin: 0 0 3px 8px;
+                font-size: 1.2rem;
+                letter-spacing: 0;
+                font-weight: 400;
+            }
+
+            sub {
+                display: contents;
+            }
+        }
+
+        &2sub {
+            margin-left: 14px;
+            @include tab {
+                margin-left: 0;
+            }
+            @include sp {
+                margin-left: 0;
+            }
+
+            span {
+                margin-left: -5px;
+                @include tab {
+                    margin-left: 0;
+                }
+                @include sp {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &3sub {
+            margin-bottom: 9px;
+
+            @include sp {
+                padding-left: 10px;
+                line-height: 1.9;
+            }
+
+            span {
+                margin-left: -5px;
+                @include tab {
+                    margin-left: 0;
+                }
+                @include sp {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        &01 {
+            .u-text9 {
+                letter-spacing: 0.02em;
+                font-size: 1.8rem;
+                font-weight: 500;
+                margin-left: -4px;
+                margin-right: 18px;
+            }
+
+            span {
+                @include tab {
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                }
+                @include sp {
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        &2 {
+            p:nth-child(1) {
+                margin-bottom: 3px;
+
+                @include tab {
+                    margin-bottom: 10px;
+                }
+                @include sp {
+                    margin-bottom: -1px;
+                }
+            }
+
+            p:nth-child(2) {
+                span {
+                    @include tab {
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+        }
+
+        &3 {
+            @include sp {
+                margin-bottom: 9px;
+                margin-top: -7px;
+            }
+
+            p {
+                @include sp {
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                }
+
+                span {
+                    @include tab {
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                    }
+                    @include sp {
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        &4 {
+
+            @include sp {
+                margin-bottom: 9px;
+            }
+
+            p {
+                @include tab {
+                    margin-bottom: 10px;
+                }
+                @include sp {
+                    font-weight: 500;
+                    letter-spacing: 0.03em;
+                }
+
+                span {
+                    @include sp {
+                        font-size: 1.4rem;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+
+        &5 {
+
+            @include sp {
+                margin-bottom: 9px;
+            }
+
+            p:nth-child(1) {
+                margin-bottom: 10px;
+                padding-top: 2px;
+                @include tab {
+                    margin-bottom: 9px;
+                    padding-top: 0;
+                }
+                @include sp {
+                    margin-bottom: 13px;
+                    padding-top: 0;
+                }
+            }
+
+            p:nth-child(2) {
+                padding-left: 3px;
+                margin-bottom: 11px;
+                @include sp {
+                    font-size: 1.4rem;
+                    line-height: 1.75;
+                    padding-left: 2px;
+                    margin-bottom: 14px;
+                    letter-spacing: 0.02em;
+                }
+
+                span {
+                    @include tab {
+                        font-size: 1.4rem;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+
+        &6 {
+            p {
+                margin-top: 0;
+            }
+        }
+
+        &7 {
+            @include sp {
+                letter-spacing: 0.04em;
+                margin-top: 14px;
+            }
+
+            p {
+                @include sp {
+                    letter-spacing: -0.05em;
+                }
+            }
+        }
+
+        &8 {
+            margin-top: 53px;
+            @include tab {
+                margin-top: 49px;
+            }
+            @include sp {
+                margin-top: 30px;
+            }
+
+            h3 {
+                margin: 0 0 13px;
+                @include tab {
+                    margin: 0 0 5px;
+                }
+                @include sp {
+                    margin: 0;
+                }
+            }
+
+            p:nth-child(1) {
+                margin-bottom: 7px;
+                @include sp {
+                    margin-top: -16px;
+                    margin-bottom: 11px;
+                }
+            }
+
+            p:nth-child(2) {
+                padding-left: 3px;
+                font-weight: 300;
+                @include tab {
+                    font-size: 1.6rem;
+                }
+                @include sp {
+                    font-size: 1.4rem;
+                    line-height: 1.78;
+                    padding-left: 2px;
+                    font-weight: 400;
+                    letter-spacing: 0.02em;        
+                }
+            }
+        }
+    }
+}

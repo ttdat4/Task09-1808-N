@@ -1,0 +1,66 @@
+//============================================
+// clearfix
+//============================================
+@mixin clear {
+    *zoom: 1;
+
+    &::after {
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+//============================================
+// breakpoint
+//============================================
+@mixin sp {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin tab {
+    @media (max-width: 1023px) and (min-width: 768px) {
+        @content;
+    }
+}
+
+.is-moveup {
+    opacity: 0;
+    transform: translateY(150px);
+}
+
+.is-view {
+    opacity: 1;
+    transform: all 0.8s linear;
+    transition-duration: 2s;
+    transform: translateY(0);
+}
+
+.is-backtotop {
+    background: #0080cc;
+    text-align: center;
+    padding: 15px 15px 6px;
+    display: inline-block;
+    position: fixed;
+    right: 2%;
+    bottom: 2%;
+    z-index: 99;
+    transition: all 0.3s;
+    cursor: pointer;
+    @include sp {
+        padding: 10px 10px 0;
+    }
+
+    img {
+        @include sp {
+            width: 12px;
+        }
+    }
+}
+
+.is-hidetop {
+    opacity: 0;
+    transition-duration: 2s;
+}

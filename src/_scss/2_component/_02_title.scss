@@ -1,0 +1,303 @@
+/*------------------------------------------------------------
+title
+------------------------------------------------------------*/
+
+
+/*
+------------------------------------------------------------*/
+.c-title {
+
+    @include sp {
+        padding: 0 20px 0 10px;
+    }
+
+    &__bigtit {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 0.07em;
+        line-height: 1.47;
+        color: #0080cc;
+        text-align: center;
+        margin-bottom: 7px;
+
+        @include tab {
+            font-size: 3rem;
+            letter-spacing: 0.054em;
+            margin-bottom: 9px;
+        }
+
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 0.05em;
+            margin-bottom: 0;
+        }
+    }
+
+    &__subtit {
+        font-size: 1.6rem;
+        color: #3c3c3c;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.75;
+        letter-spacing: 0.02em;
+
+        @include tab {
+            font-size: 1.4rem;
+            letter-spacing: 0.024em;
+        }
+        @include sp {
+            font-size: 1.4rem;
+            line-height: 1.6;
+            letter-spacing: 0.024em;
+        }
+    }
+
+    &2 {
+        font-size: 3.4rem;
+        font-weight: 500;
+        letter-spacing: 0.07em;
+        margin-bottom: 23px;
+        line-height: 1.47;
+        color: #fff;
+
+        @include tab {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+    
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 0.05em;
+            line-height: 0.9;
+            margin-bottom: 17px;
+        }
+    }
+
+    &3 {
+        font-size: 3.4rem;
+        font-weight: 500;
+        line-height: 1.47;
+        color: #0080cc;
+        text-align: center;
+        margin-bottom: 10px;
+        letter-spacing: 0.05em;
+        @include tab {
+            margin-bottom: 5px;
+        }
+
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 0.03em;
+            margin-bottom: -1px;
+        }
+    }
+
+    &4 {
+        font-size: 3.4rem;
+        font-weight: 500;
+        line-height: 1.47;
+        color: #0080cc;
+        text-align: center;
+        letter-spacing: 0.07em;
+        margin-bottom: 17px;
+
+        @include tab {
+            font-size: 2.6rem;
+            line-height: 1.6;
+            letter-spacing: 0.05em;
+            margin-bottom: 25px;
+        }
+        @include sp {
+            font-size: 2.4rem;
+            text-align: left;
+            line-height: 1.25;
+            margin-bottom: 13px;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    &5 {
+        font-size: 3.4rem;
+        color: #0080cc;
+        font-weight: 500;
+        line-height: 1.32;
+        margin-bottom: 12px;
+        letter-spacing: 0.02em;
+        position: relative;
+        @include tab {
+            font-size: 3rem;
+            letter-spacing: 0.05em;
+            line-height: 1.4;
+        }
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    &6 {
+        font-size: 3.4rem;
+        color: #0080cc;
+        font-weight: 500;
+        line-height: 1.32;
+        margin-bottom: 45px;
+        letter-spacing: 0.03em;
+        position: relative;
+
+        @include tab {
+            font-size: 3rem;
+            letter-spacing: 0.07em;
+            margin-bottom: 21px;
+        }
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 0.06em;
+            margin-bottom: 26px;
+        }
+    }
+
+    &7 {
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: #ff5800;
+        line-height: 1.6;
+        margin: 91px 0 7px;
+        letter-spacing: 0.02em;
+
+        @include tab {
+            margin: 54px 0 3px;
+        }
+
+        @include sp {
+            font-size: 2.2rem;
+            line-height: 1.36;
+            margin: 37px 0 12px;
+            letter-spacing: 0.05em;
+        }
+    }
+
+    &8 {
+        font-size: 4.4rem;
+        font-weight: 500;
+        color: #0080cc;
+        text-align: center;
+        letter-spacing: 0.07em;
+        line-height: 1.13;
+        margin-bottom: 12px;
+
+        @include tab {
+            font-size: 3rem;
+            margin-bottom: 14px;
+        }
+
+        @include sp {
+            font-size: 2.4rem;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+        }
+    }
+
+    &9 {
+        font-size: 3.4rem;
+        font-weight: 500;
+        color: #fff;
+        text-align: left;
+        line-height: 1.13;
+        margin-bottom: 41px;
+        letter-spacing: 0.074em;
+
+        @include sp {
+            margin-bottom: 30px;
+            font-size: 2.4rem;
+            letter-spacing: 0.05em;
+        }
+
+    }
+
+    &10 {
+        font-size: 3.4rem;
+        color: #fff;
+        font-weight: 500;
+        text-align: left;
+        margin-bottom: 34px;
+        letter-spacing: 0.07em;
+        @include tab {
+            margin-top: 48px;
+            margin-bottom: -4px;
+        }
+        @include sp {
+            font-size: 2.4rem;
+            letter-spacing: 0.05em;
+            text-align: left;
+            line-height: 1.25;
+            margin-bottom: 37px;
+        }
+    }
+
+    &11 {
+        font-size: 4.4rem;
+        color: #0080cc;
+        font-weight: 500;
+        text-align: center;
+        letter-spacing: 0.07em;
+        line-height: 1.13;
+        margin-bottom: 15px;
+        margin-top: 1px;
+        @include sp {
+            font-size: 2.4rem;
+            margin-bottom: 13px;
+        }
+    }
+
+    &12 {
+        font-size: 4.4rem;
+        font-weight: 500;
+        color: #0080cc;
+        letter-spacing: 0.07rem;
+        line-height: 1.13;
+        text-align: center;
+        margin-bottom: 56px;
+        @include tab {
+            margin-bottom: 34px;
+        }
+        @include sp {
+            font-size: 2.4rem;
+            margin-bottom: 39px;
+            letter-spacing: 0.05rem;
+        }
+    }
+
+}
+
+.c-subtitle {
+    &3 {
+        font-size: 1.6rem;
+        color: #3c3c3c;
+        font-weight: 400;
+        text-align: center;
+        line-height: 1.75;
+        letter-spacing: 0.02em;
+        @include sp {
+            font-size: 1.4rem;
+        }
+    }
+
+    &4 {
+        text-align: center;
+        line-height: 1.75;
+        letter-spacing: 0.01em;
+        @include tab {
+            font-size: 1.4rem;
+        }
+        @include sp {
+            font-size: 1.4rem;
+            text-align: center;
+            line-height: 1.6;
+            letter-spacing: 0.02em;
+        }
+    }
+}
+
+
+
+

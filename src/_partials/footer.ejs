@@ -1,0 +1,29 @@
+<footer class="c-footer">
+  <div class="l-footerwrap">
+    <div class="c-footer__logo">
+      <a href="<%= BASE_URL %>index.html">
+        <span class="sp-only"> Recruitment 2020</span>
+      </a>
+    </div>
+    <nav class="c-gnav pc-only">
+      <ul><% if (typeof linklists != 'undefined') { %><% linklists.main && linklists.main.forEach(link=> { %>
+        <li>
+          <a <% if (link.current || link.active) { %>class="is-active"<% }%>href="<%= link.url %>"><%= link.title %></a>
+        </li><% }) %><% } %>
+      </ul>
+    </nav>
+    <nav class="c-gnav tab-only">
+      <ul><% if (typeof linklists != 'undefined') { %><% linklists.main && linklists.main.forEach(link=> { %>
+        <li>
+          <a <% if (link.current || link.active) { %>class="is-active"<% }%>href="<%= link.url %>"><%= link.title %></a>
+        </li><% }) %><% } %>
+      </ul>
+    </nav>
+   
+    <div class="c-footer__recruit">
+      <p>募集要項</p>
+    </div>
+  </div>
+  <p class="c-footer__text1"><a href="https://entex.co.jp/" target="_blank"> &gt; 株式会社ENTEXコーポレートサイト</a></p>
+  <small class="c-footer__copyright">© 株式会社ENTEX. All rights reserved.</small>
+</footer>

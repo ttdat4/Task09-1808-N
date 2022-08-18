@@ -1,0 +1,129 @@
+.c-about {
+    display: flex;
+    justify-content: space-between;
+
+    @include sp {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    &__txt {
+        max-width: 492px;
+        width: 100%;
+        color: #fff;
+        padding: 12px 10px 0 0;
+        margin-right: 46px;
+
+        @include tab {
+            padding: 25px 10px 0 0;
+            margin-right: 13px;
+            margin-left: -4px;
+        }
+
+        @include sp {
+            max-width: 100%;
+            margin-right: 0;
+            padding: 0;
+        }
+
+        &1 {
+            font-size: 1.6rem;
+            line-height: 1.75;
+            letter-spacing: 0.024em;
+            margin-bottom: 28px;
+            
+            @include tab {
+                font-size: 1.4rem;
+                margin-bottom: 27px;
+            }
+
+            @include sp {
+                font-size: 1.4rem;
+                line-height: 1.57;
+                margin-bottom: 22px;
+                letter-spacing: 0.03em;
+            }
+        }
+    }
+
+    &__img {
+        max-width: 540px;
+        width: 100%;
+        flex-shrink: 0;
+
+        @include tab {
+            max-width: 309px;
+        }
+
+        @include sp {
+            max-width: 100%;
+            margin-bottom: 52px;
+            text-align: center;
+        }
+
+        &wrap {
+            position: relative;
+
+            @include sp {
+                display: block;
+            }
+        }
+
+        &wrap::before {
+            content: "";
+            border: 2px #fff solid;
+            max-width: 536px;
+            width: 100%;
+            height: 355px;
+            position: absolute;
+            top: 18px;
+            left: -20px;
+
+            @include tab {
+                width: 98.8%;
+                height: 303px;
+                top: 16px;
+                left: -17px;
+            }
+
+            @include sp {
+                max-width: 330.5px;
+                height: 98%;
+                top: 10px;
+                left: -10px;
+            }
+        }
+
+        &1 {
+            margin-bottom: 44px;
+            display: block;
+
+
+            @include tab {
+                margin-bottom: 40px;
+            }
+
+            @include sp {
+                margin-bottom: 29px;
+            }
+
+            img {
+                margin-top: -1px;
+
+                @include tab {
+                    height: 304px;
+                }
+            }
+        }
+
+        &2 {
+            img {
+                @include sp {
+                    margin-left: -3px;
+                }
+            }
+        }
+    }
+}

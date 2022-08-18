@@ -1,0 +1,204 @@
+.c-photowrap {
+    border: 1px #0080cc solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 39px 38px 17px 40px;
+    max-width: 880px;
+    width: 100%;
+    margin: 35px auto 0;
+    @include tab {
+        max-width: 728px;
+        padding: 19px 19px 0;
+        margin: 34px auto 0;
+    }
+    @include sp {
+        flex-direction: column;
+        padding: 10px 10px 9px;
+        margin: 34px auto 0;
+    }
+
+    &1 {
+        text-align: center;
+        line-height: 1.77;
+        letter-spacing: 0.02em;
+        margin-bottom: 100px;
+
+        @include tab {
+            font-size: 1.4rem;
+            margin-bottom: 57px;
+        }
+        @include sp {
+            font-size: 1.4rem;
+            padding: 0 20px;
+            text-align: left;
+            line-height: 1.56;
+            margin-bottom: 35px;
+        }
+    }
+
+    &2 {
+        &__img {
+            img {
+                max-width: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__video {
+        position: relative;
+        width: 50%;
+        height: 560px;
+        margin-right: 20px;
+        overflow: hidden;
+
+        @include tab {
+            height: 462px;
+        }
+
+        @include sp {
+            max-width: 335px;
+            width: 100%;
+            height: 450px;
+            margin: 0 auto 19px;
+        }
+
+        video {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__img {
+        max-width: 380px;
+        width: 100%;
+
+        @include tab {
+            max-width: 325px;
+        }
+
+        @include sp {
+            max-width: 335px;
+            margin: 0 auto;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @include sp {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 9px;
+            }
+        }
+
+        &1 {
+            max-width: 180px;
+            height: 120px;
+            width: 100%;
+            object-fit: cover;
+            overflow: hidden;
+            margin-bottom: 26px;
+            cursor: pointer;
+            position: relative;
+
+            @include tab {
+                max-width: 152px;
+                height: 99px;
+                margin-bottom: 22px;
+            }
+
+            @include sp {
+                max-width: 163px;
+                height: 100px;
+                margin-bottom: 1px;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    &__pickup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #005384;
+        transform: translate(-50%, -50%);
+        visibility: hidden;
+        background: rgba(255, 255, 255, 0.6);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20%;
+    }
+
+    &__pickup::before {
+        content: "";
+        background: url("assets/img/zoom_in.svg") top left no-repeat;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 41%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-size: 100%;
+    }
+
+    &__pickup:hover {
+        visibility: visible;
+    }
+
+    &__popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        transition: 0.3s ease-in-out;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        padding: 46px 0 8px;
+        background: #fff;
+        display: none;
+
+        @include tab {
+            padding-top: 15%;
+        }
+
+        &img {
+            max-width: 960px;
+            width: 100%;
+            background: #fff;
+            border: 4px #0080cc solid;
+            text-align: center;
+            padding: 40px 40px 36px;
+            overflow: hidden;
+            display: block;
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include tab {
+                width: 90%;
+            }
+            @include sp {
+                max-width: 336px;
+                border: 2px #0080cc solid;
+                padding: 35px 20px 25px;
+            }
+        }
+    }
+}

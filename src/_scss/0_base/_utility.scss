@@ -1,0 +1,339 @@
+///*------------------------------------------------------------
+//Anchor position
+//------------------------------------------------------------*/
+//.u-anchor:before {
+//	content:"";
+//	margin-top: -100px;
+//	padding-top: 100px;
+//}
+
+.u-title {
+    font-size: 3.4rem;
+    color: #0080cc;
+    line-height: 0.9;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    position: relative;
+    margin: 102px 0 17px;
+
+    @include tab {
+        font-size: 3rem;
+        letter-spacing: 0.054em;
+        margin: 62px 0 13px;
+    }
+
+    @include sp {
+        font-size: 2.4rem;
+        letter-spacing: 0.05em;
+        margin: 39px 0 9px;
+    }
+}
+
+.u-subtitle {
+    font-size: 1.6rem;
+    color: #3c3c3c;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 31px;
+    line-height: 1.75;
+    letter-spacing: 0.02em;
+
+    @include tab {
+        font-size: 1.4rem;
+        letter-spacing: 0.024em;
+        margin-bottom: 17px;
+    }
+
+    @include sp {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        margin-bottom: 18px;
+    }
+}
+
+.u-wimg1 {
+
+    @include sp {
+        width: 50%;
+    }
+}
+
+.u-fre {
+    tr:nth-child(1) {
+        padding-bottom: 12px;
+
+        th {
+            padding-top: 3px;
+            @include sp {
+                padding-top: 0;
+            }
+        }
+    }
+
+    tr:nth-child(2) {
+        @include tab {
+            padding: 16px 0 17px;
+            line-height: 2;
+        }
+        @include sp {
+            padding: 14px 10px 20px;
+        }
+    }
+
+    tr:nth-child(3) {
+        @include tab {
+            padding: 16px 0 18px;
+        }
+        @include sp {
+            padding: 14px 10px 15px;
+        }
+    }
+
+    tr:nth-child(4) {
+        @include tab {
+            padding: 14px 0 13px;
+            line-height: 2.1;
+        }
+        @include sp {
+            padding: 14px 10px 16px;
+        }
+
+        th {
+            padding-top: 3px;
+        }
+    }
+
+    tr:nth-child(5) {
+        @include tab {
+            padding: 15px 0 16px;
+        }
+        @include sp {
+            padding: 15px 10px 0;
+        }
+    }
+
+    tr:nth-child(6) {
+        padding-bottom: 8px;
+        @include tab {
+            padding-bottom: 14px;
+        }
+        @include sp {
+            padding: 8px 10px 0;
+        }
+
+        th {
+            padding-top: 2px;
+        }
+    }
+
+    tr:nth-child(7) {
+        padding-bottom: 11px;
+        @include tab {
+            padding-bottom: 14px;
+            line-height: 2.1;
+        }
+        @include sp {
+            padding: 8px 10px 19px;
+        }
+
+    }
+
+    tr:nth-child(8) {
+        @include tab {
+            padding: 14px 0 19px;
+        }
+        @include sp {
+            padding: 15px 10px 19px;
+        }
+
+        th {
+            padding-top: 2px;
+            @include sp {
+                padding-top: 0;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    tr:nth-child(9) {
+        @include tab {
+            padding-bottom: 17px;
+        }
+        @include sp {
+            padding: 12px 10px 16px;
+        }
+
+        th {
+            padding-top: 2px;
+        }
+    }
+
+    tr:nth-child(10) {
+        @include tab {
+            padding-bottom: 19px;
+        }
+
+        th {
+            padding-top: 2px;
+            @include sp {
+                padding-top: 2px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    tr:nth-child(11) {
+        @include tab {
+            padding-bottom: 19px;
+        }
+        @include sp {
+            padding-bottom: 17px;
+        }
+
+        th {
+            padding-top: 2px;
+            @include sp {
+                padding-top: 3px;
+                margin-bottom: 7px;
+            }
+        }
+    }
+
+    tr:nth-child(12) {
+        @include sp {
+            padding-bottom: 18px;
+        }
+
+        th {
+            padding-top: 2px;
+            @include tab {
+                padding-bottom: 5px;
+            }
+            @include sp {
+                padding-top: 3px;
+                margin-bottom: 6px;
+            }
+        }
+
+        td {
+            padding: 2px 0 0 4px;
+        }
+    }
+
+    tr:nth-child(13) {
+        padding-bottom: 13px;
+        @include tab {
+            padding-bottom: 15px;
+            line-height: 2.1;
+        }
+        @include sp {
+            padding-bottom: 14px;
+        }
+
+        th {
+            padding-top: 2px;
+            @include tab {
+                line-height: 1.7;
+            }
+            @include sp {
+                padding-top: 2px;
+                margin-bottom: 20px;
+            }
+        }
+
+        td {
+            padding: 0 42px 0 1px;
+            letter-spacing: 0.02em;
+            @include sp {
+                padding: 0 0 0 1px;
+                letter-spacing: 0;
+                line-height: 1.6;
+            }
+        }
+    }
+    
+}
+
+.u-exp {
+    tr:nth-child(1) {
+        border-bottom: 5px #3c3c3c solid !important;
+        padding-top: 16px;
+        padding-bottom: 13px !important;
+
+    }
+
+    td {
+        letter-spacing: 0.03em;
+    }
+
+    tr:nth-child(4) {
+        th {
+            padding-top: 3px;
+        }
+    }
+
+    tr:nth-child(6) {
+        padding: 12px 0 14px;
+    }
+
+    tr:nth-child(7) {
+        th {
+            padding-top: 2px;
+        }
+    }
+
+    tr:nth-child(8) {
+            
+        padding: 11px 0 17px;
+            
+    }
+
+    tr:nth-child(9) {
+            
+        padding: 15px 0 14px;
+
+        th {
+            padding-top: 2px;
+        }
+            
+    }
+
+    tr:nth-child(10) {
+        th {
+            padding-top: 3px;
+        }
+    }
+
+    tr:nth-child(12) {
+        padding: 17px 0 14px;
+    }
+
+    tr:nth-child(13) {
+        padding-bottom: 11px;
+
+       
+
+        td {
+            padding: 0 40px 0 1px;
+          
+        }
+    }
+    
+}
+
+
+//------------------------------------------------------------
+// margin
+//------------------------------------------------------------
+
+//------------------------------------------------------------
+// color
+
+.u-0080cc {
+    color: #0080cc;
+}
+
+.u-ff5800 {
+    color: #ff5800;
+}
+//------------------------------------------------------------

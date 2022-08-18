@@ -1,0 +1,92 @@
+/*------------------------------------------------------------
+btn
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-btnclose {
+    display: flex;
+    justify-content: flex-end;
+
+    &__1 {
+        position: relative;
+        top: 23px;
+        left: 35px;
+
+        &close1 {
+            background: #fff;
+            width: 10px;
+            height: 2px;
+            transform: translateY(-2px) rotate(45deg);
+        }
+
+        &close2 {
+            background: #fff;
+            width: 10px;
+            height: 2px;
+            transform: translateY(-4px) rotate(-45deg);
+        }
+    }
+
+    &__text {
+  
+        font-size: 1.6rem;
+        font-weight: 500;
+        max-width: 117px;
+        width: 100%;
+        background: #0080cc;
+        display: block;
+        text-align: center;
+        padding: 8px 0 8px 24px;
+        color: #fff;
+        border-radius: 9px;
+        margin-top: 3px;
+        cursor: pointer;
+    }
+
+    &photo {
+        font-size: 1.6rem;
+        font-weight: 500;
+        max-width: 117px;
+        width: 100%;
+        background: #0080cc;
+        display: block;
+        text-align: center;
+        padding: 6px 0;
+        color: #fff;
+        border-radius: 9px;
+        margin: 40px auto 0;
+        cursor: pointer;
+        @include sp {
+            margin-top: 18px;
+        }
+
+        &__wrapper {
+            position: relative;
+            top: 15px;
+            left: 26px;
+            @include tab {
+                top: 18px;
+                left: 20px;
+            }
+
+            &close1 {
+                background: #fff;
+                width: 10px;
+                height: 2px;
+                transform: translateY(-2px) rotate(45deg);
+            }
+
+            &close2 {
+                background: #fff;
+                width: 10px;
+                height: 2px;
+                transform: translateY(-4px) rotate(-45deg);
+            }
+        }
+
+        &__text {
+            padding-left: 18px;
+        }
+    }
+}

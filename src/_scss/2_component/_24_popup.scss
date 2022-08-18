@@ -1,0 +1,106 @@
+.c-popup {
+    max-width: 960px;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    border: 4px #0080cc solid;
+    padding: 38px 55px 35px;
+    display: block;
+    margin: 0 auto;
+    background: #fff;
+    overflow-y: scroll;
+    @include tab {
+        width: 90%;
+    }
+    @include sp {
+        padding: 32px 16px 35px;
+        border: 2px #0080cc solid;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #0080cc;
+        line-height: 1.75;
+        margin-bottom: 23px;
+        letter-spacing: 0.08em;
+        @include sp {
+            font-size: 2rem;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__1 {
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+            display: inherit;
+        }
+
+        &img {
+            max-width: 290px;
+            width: 100%;
+            margin-right: 40px;
+            @include sp {
+                max-width: 100%;
+                width: 100%;
+                margin-right: 0;
+            }
+
+            img {
+                height: 410px;
+                padding-top: 5px;
+                @include sp {
+                    width: 100%;
+                    height: 315px;
+                    object-position: 0 -20px;
+                }
+            }
+        }
+
+        &text {
+            font-size: 2.4rem;
+            color: #fff;
+            background: #0080cc;
+            text-align: center;
+            padding: 10px 0;
+            line-height: 1.25;
+        }
+    }
+
+    &__content {
+        max-width: 513px;
+        width: 100%;
+        @include sp {
+            margin-top: 40px;
+        }
+
+        dl {
+            margin-bottom: 34px;
+        }
+
+        dt {
+            font-size: 1.8rem;
+            line-height: 1.67;
+            margin-bottom: 4px;
+            font-weight: 700;
+
+            @include sp {
+                font-size: 1.6rem;
+                margin-bottom: 10px;
+                letter-spacing: 0.047em;
+                font-feature-settings: "palt" 1;
+            }
+        }
+
+        dd {
+            font-size: 1.6rem;
+            line-height: 1.875;
+            @include sp {
+                font-size: 1.4rem;
+                line-height: 1.57;
+            }
+        }
+    }
+}

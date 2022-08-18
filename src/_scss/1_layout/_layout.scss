@@ -1,0 +1,819 @@
+/* layout
+------------------------------------------------------------*/
+body {
+    font-family: $main-fonts;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #3c3c3c;
+    line-height: 1.5;
+    @include sp {
+        min-width: 320px;
+    }
+}
+//-------------------------------------------------------
+
+//-------------------------------------------------------
+
+.l-headerwrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 13px 21px;
+
+    @include tab {
+        flex-wrap: wrap;
+        padding: 20px 20px 0;
+    }
+
+    @include sp {
+        padding: 14px 21px 0 10px;
+    }
+}
+
+.l-footerwrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 20px 13px 21px;
+    border-bottom: 1px solid #efefef;
+    @include tab {
+        flex-wrap: wrap;
+        padding: 31px 20px 11px;
+    }
+
+    @include sp {
+        padding: 10px 21px 0 10px;
+    }
+}
+
+.l-aboutwrap {
+    max-width: 1020px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    margin-right: 60px;
+    margin-left: 120px;
+
+    @include tab {
+        max-width: 728px;
+        width: 95%;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    @include sp {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.l-workwrap {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    @include tab {
+        max-width: 728px;
+        width: 95%;
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    @include sp {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 0 0 10px;
+    }
+}
+
+.l-photowrap {
+    max-width: 1020px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+
+    @include tab {
+        max-width: 100%;
+    }
+}
+
+.l-top4wrap {
+    max-width: 100%;
+    width: 100%;
+    background: url("assets/img/bgtop4.jpg") top center no-repeat;
+    background-size: cover;
+    min-height: 674px;
+    display: inline-block;
+    margin-bottom: 74px;
+
+    @include tab {
+        background: url("assets/img/bgtop4tab.jpg") top center no-repeat;
+        background-size: cover;
+        min-height: 567px;
+        margin-bottom: 0;
+    }
+    @include sp {
+        background: none;
+        margin-bottom: 33px;
+        min-height: auto;
+    }
+}
+
+.l-top5wrap {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    color: #0080cc;
+    padding: 96px 0 94px;
+    position: relative;
+
+    @include tab {
+        padding: 55px 0 24px;
+    }
+
+    @include sp {
+        max-width: 100%;
+        width: 100%;
+        padding: 35px 20px 55px;
+        margin-bottom: 30px;
+    }
+}
+
+.l-top5wrap::before {
+    content: "";
+    background: #f8f8f8;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 16.6%;
+    z-index: -1;
+
+    @include tab {
+        right: 8.9%;
+    }
+
+    @include sp {
+        width: 100%;
+        right: 10px;
+    }
+}
+
+.l-top6wrap {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    @include tab {
+        max-width: 748px;
+        width: 100%;
+        margin-left: 20px;
+    }
+    @include sp {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 0 17px;
+        padding-left: 10px;
+        margin: 0;
+    }
+
+}
+
+.l-top6wrap::before {
+    content: "";
+    background: #fdfbef;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @include sp {
+        left: 10px;
+    }
+}
+
+.l-interviewwrap {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+
+    @include tab {
+        max-width: 728px;
+        width: 100%;
+    }
+
+    @include sp {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 20px 21px;
+    }
+
+    &1 {
+        max-width: 960px;
+        width: 95%;
+        margin: 0 auto;
+        position: relative;
+        @include sp {
+            max-width: 100%;
+            width: 100%;
+            padding: 0 20px;
+        }
+    }
+}
+
+.l-recruitwrap {
+    max-width: 960px;
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    @include sp {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.l-companywrap {
+    max-width: 960px;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    @include tab {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 20px;
+    }
+    @include sp {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+//-------------------------------------------------------
+.c-mainvisual {
+    &1 {
+        max-width: 100%;
+        width: 100%;
+        min-height: 770px;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        background: url("assets/img/banner1.png") no-repeat center;
+        background-size: cover;
+        @include tab {
+            background: url("assets/img/banner1tab.png") no-repeat center;
+            background-size: cover;
+            min-height: 789px;
+        }
+        @include sp {
+            background: url("assets/img/banner1sp.png") no-repeat center;
+            background-size: cover;
+            min-height: 605px;
+            margin-top: -6px;
+        }
+    }
+
+    &2 {
+        max-width: 100%;
+        width: 100%;
+        min-height: 770px;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        background: url("assets/img/banner2.png") no-repeat center;
+        background-size: cover;
+        @include tab {
+            min-height: 789px;
+        }
+        @include sp {
+            min-height: 605px;
+            margin-top: -6px;
+        }
+    }
+
+    &3 {
+        max-width: 100%;
+        width: 100%;
+        min-height: 770px;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+        color: #fff;
+        background: url("assets/img/banner3.png") no-repeat center;
+        background-size: cover;
+        @include tab {
+            min-height: 789px;
+        }
+        @include sp {
+            min-height: 605px;
+            margin-top: -6px;
+        }
+    }
+
+    &__inner {
+        position: absolute;
+        top: 28.2%;
+        left: 120px;
+
+        @include tab {
+            top: 33.6%;
+            left: 41px;
+        }
+
+        @include sp {
+            top: 32%;
+            left: 20px;
+        }
+
+        h2 {
+            font-size: 5rem;
+            letter-spacing: 0.05em;
+            height: 241px;
+
+            @include tab {
+                font-size: 4rem;
+                letter-spacing: 0.044em;
+                height: 185px;
+            }
+
+            @include sp {
+                font-size: 2.8rem;
+                letter-spacing: 0.01em;
+                height: 134px;
+            }
+        }
+
+        p {
+            width: fit-content;
+            background: #0080cc;
+            height: calc((100% - 34px) / 3);
+            font-weight: 500;
+
+            @include sp {
+                height: calc((100% - 20px) / 3);
+            }
+        }
+
+        p:nth-child(1) {
+            margin-bottom: 16px;
+            padding: 0 3px 0 8px;
+
+            @include tab {
+                margin-bottom: 17px;
+                padding: 0 9px 0 8px;
+            }
+            @include sp {
+                width: 131px;
+                margin-bottom: 7px;
+                padding: 0 0 0 5px;
+            }
+        }
+
+        p:nth-child(2) {
+            margin-bottom: 18px;
+            padding: 0 10px 0 8px;
+            @include tab {
+                margin-bottom: 16px;
+                padding: 0 12px 0 8px;
+            }
+
+            @include sp {
+                margin-bottom: 8px;
+                padding: 1px 7px 0 5px;
+                height: 41px;
+            }
+        }
+
+        p:nth-child(3) {
+            padding: 0 15px 0 8px;
+            @include tab {
+                padding: 0 13px 0 8px;
+            }
+            @include sp {
+                padding: 0 11px 0 5px;
+            }
+        }
+    }
+
+    &__scroll {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        bottom: -6%;
+        left: 50%;
+        max-width: 960px;
+        width: 100%;
+        height: 95px;
+        text-align: center;
+        background-color: #fff;
+
+        @include tab {
+            max-width: 687px;
+            height: 66px;
+            bottom: -4%;
+        }
+
+        @include sp {
+            max-width: 355px;
+            height: 73px;
+        }
+
+        &text {
+            color: #0080cc;
+            font-weight: 500;
+
+            a {
+                font-size: 2rem;
+                letter-spacing: 0.024em;
+                position: relative;
+                top: -55px;
+
+                @include tab {
+                    top: -63px;
+                    left: 1.5%;
+                }
+
+                @include sp {
+                    font-size: 1.6rem;
+                    top: -41px;
+                }
+            }
+
+            h1 {
+                font-size: 2.6rem;
+                letter-spacing: 0.074em;
+                padding: 2px 0 0 3px;
+                font-weight: 500;
+
+                @include tab {
+                    font-size: 2.2rem;
+                    padding: 0 0 0 5px;
+                    margin-top: -14px;
+                }
+
+                @include sp {
+                    font-size: 1.8rem;
+                    letter-spacing: 0.02em;
+                    margin-top: -12px;
+                }
+            }
+
+            span {
+                color: #ff5800;
+            }
+        }
+    }
+
+    &__scroll::before {
+        content: "";
+        position: absolute;
+        width: 2px;
+        top: -12px;
+        border-top: 30px solid #0080cc;
+        left: 50%;
+
+        @include tab {
+            top: -20.5px;
+            left: 51.4%;
+        }
+        @include sp {
+            border-top: 27px solid #0080cc;
+            top: -15px;
+        }
+    }
+}
+
+.c-top4wrap {
+    max-width: 489px;
+    width: 100%;
+    background: #fff;
+    padding: 37px 33px 29px 40px;
+    margin-top: 96px;
+
+    @include tab {
+        max-width: 383px;
+        padding: 37px 32px 35px 39px;
+        margin-top: 60px;
+        margin-left: -18px;
+    }
+
+    @include sp {
+        max-width: 100%;
+        padding: 34px 20px 0;
+        margin-top: 0;
+    }
+
+    &__content {
+        max-width: 960px;
+        width: 90%;
+        margin: 0 auto;
+
+        @include sp {
+            width: 100%;
+        }
+
+        &1 {
+            line-height: 1.9;
+            letter-spacing: 0.02em;
+
+            &text1 {
+                letter-spacing: 0.02em;
+                @include tab {
+                    letter-spacing: 0.03em;
+                }
+                @include sp {
+                    letter-spacing: 0.02em;
+                }
+            }
+            @include tab {
+                font-size: 1.4rem;
+                line-height: 1.79;
+            }
+            @include sp {
+                font-size: 1.4rem;
+                line-height: 1.57;
+            }
+        }
+    }
+}
+
+.c-top5wrap {
+    &__content {
+        padding-left: 40px;
+        max-width: 804px;
+        width: 100%;
+        margin-bottom: 15px;
+        position: relative;
+
+        @include sp {
+            max-width: 100%;
+            padding-left: 10px;
+            letter-spacing: 0.05em;
+            margin-bottom: 16px;
+        }
+
+        &title {
+            font-size: 2.5rem;
+            line-height: 1.52;
+            font-weight: 600;
+            margin-bottom: 15px;
+            letter-spacing: 0.02em;
+
+            @include tab {
+                margin-bottom: 8px;
+            }
+            @include sp {
+                font-size: 1.8rem;
+                line-height: 1.67;
+                font-weight: 500;
+                margin-bottom: 12px;
+                letter-spacing: 0.05em;
+            }
+        }
+
+        &text {
+            margin: 17px 67px 0 51px;
+            border-left: 1px #0080cc solid;
+
+            @include tab {
+                margin: -3px 67px 0 54px;
+            }
+
+            @include sp {
+                margin: 0 0 0 30px;
+                font-size: 1.4rem;
+                line-height: 1.58;
+            }
+
+            p {
+                padding: 12px 0 15px 87px;
+                line-height: 1.7;
+                letter-spacing: 0.02em;
+
+                @include tab {
+                    padding: 17px 32px 50px 40px;
+                }
+
+                @include sp {
+                    padding: 5px 0 6px 28px;
+                    letter-spacing: 0.025em;
+                    line-height: 1.57;
+                }
+            }
+
+            
+        }
+
+
+        &2 {
+
+            @include tab {
+                margin-top: -15px;
+                margin-bottom: 7px;
+            }
+
+            div:nth-child(1) {
+                margin-bottom: 11px;
+
+                @include sp {
+                    margin-bottom: 33px;
+                }
+            }
+            
+            div:nth-child(2) {
+                margin-top: 10px;
+                @include tab {
+                    margin-top: -7px;
+                }
+                @include sp {
+                    margin-top: -15px;
+                }
+
+                p {
+                    @include tab {
+                        padding: 17px 32px 23px 40px;
+                    }
+                    @include sp {
+                        padding: 11px 0 15px 28px;
+                    }
+                }
+            }
+        }
+
+        &3 {
+            margin-bottom: 13px;
+            @include tab {
+                margin-bottom: 20px;
+            }
+
+            div:nth-child(1) {
+                @include sp {
+                    margin-bottom: 12px;
+                }
+            }
+
+            div:nth-child(2) {
+                p {
+                    padding-bottom: 22px;
+
+                    @include tab {
+                        padding: 15px 18px 9px 40px;
+                    }
+
+                    @include sp {
+                        padding-top: 15px;
+                        padding-bottom: 14px;
+                    }
+                }
+            }
+        }
+
+        &4 {
+            div:nth-child(1) {
+                @include tab {
+                    margin-bottom: 14px;
+                }
+                @include sp {
+                    margin-bottom: 12px;
+                }
+            }
+
+            div:nth-child(2) {
+
+                @include tab {
+                    font-size: 1.4rem;
+                }
+
+                .u-contenttext1 {
+                    padding-bottom: 19px;
+
+                    @include tab {
+                        padding-bottom: 8px;
+                        line-height: 1.8;
+                        padding-top: 11px;
+                    }
+                    @include sp {
+                        padding-top: 18px;
+                        padding-bottom: 8px;
+                    }
+                }
+
+                .u-contenttext2 {
+                    padding-bottom: 16px;
+
+                    @include tab {
+                        line-height: 1.8;
+                        padding-bottom: 10px;
+                    }
+
+                    @include sp {
+                        padding-bottom: 17px;
+                    }
+                }
+            }
+        }
+
+        &5 {
+
+            @include sp {
+                padding-left: 0;
+            }
+
+            div {
+                font-size: 2.5rem;
+                font-weight: 600;
+                line-height: 1.52;
+                color: #ff5800;
+                border: 0;
+                padding: 13px 0 12px;
+                text-align: center;
+                position: relative;
+                margin-top: 40px;
+
+                @include tab {
+                    font-size: 2.1rem;
+                }
+                
+                @include sp {
+                    padding: 30px 0 2px;
+                    font-size: 1.8rem;
+                    line-height: 1.44;
+                    margin: 0;
+                    letter-spacing: 0.02em;
+                }
+
+                p {
+                    padding-left: 0;
+                    letter-spacing: 0;
+                    margin-left: -20px;
+                    line-height: 1.52;
+
+                    @include tab {
+                        letter-spacing: 0;
+                        margin-left: -17px;
+                        line-height: 1.7;
+                        padding: 14px 33px 46px 4px;
+                    }
+                    @include sp {
+                        padding: 0;
+                        letter-spacing: 0.01em;
+                        margin-left: 0;
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+            div::before {
+                content: "";
+                background: url("/assets/img/icon_leftangel.svg") top left no-repeat;
+                width: 40px;
+                height: 43px;
+                position: absolute;
+                top: -1px;
+                left: -11px;
+                background-size: 100%;
+
+
+                @include tab {
+                    top: 1px;
+                }
+
+                @include sp {
+                    width: 30px;
+                    height: 32px;
+                    top: 2px;
+                    left: -10px;
+                }
+            }
+
+            div::after {
+                content: "";
+                background: url("/assets/img/icon_rightangel.svg") top left no-repeat;
+                width: 40px;
+                height: 43px;
+                position: absolute;
+                bottom: -5px;
+                right: 6px;
+                background-size: 100%;
+
+                @include tab {
+                    bottom: 20px;
+                    right: 33px;
+                }
+                @include sp {
+                    width: 30px;
+                    height: 32px;
+                    bottom: -31px;
+                    right: -7px;
+                }
+            }
+        }
+    } 
+}

@@ -1,0 +1,164 @@
+/*------------------------------------------------------------
+table
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+.c-tablecompany {
+    margin-bottom: 44px;
+    @include tab {
+        font-size: 1.4rem;
+        margin-bottom: 49px;
+    }
+    @include sp {
+        font-size: 1.4rem;
+        letter-spacing: 0.02em;
+        margin-bottom: 52px;
+    }
+
+    table {
+        tr {
+            
+            width: 100%;
+            color: #0b0b0b;
+            @include tab {
+                display: block;
+                color: #3c3c3c;
+            }
+            @include sp {
+                display: inline-block;
+                color: #3c3c3c;
+            }
+        }
+
+        th {
+            width: 30%;
+            font-weight: 400;
+            background: #f7f7f7;
+            border: 1px #cbcbcb solid;
+            text-align: left;
+            vertical-align: top;
+            line-height: 1.875;
+            border-bottom: 0;
+            padding: 12px 0 12px 20px;
+            @include tab {
+                width: 30.4%;
+                padding: 14px 0 14px 20px;
+            }
+            @include sp {
+                width: 100%;
+                display: inline-block;
+                padding: 7px 0 7px 10px;
+            }
+        }
+
+        td {
+            border: 1px #cbcbcb solid;
+            text-align: left;
+            vertical-align: top;
+            line-height: 1.875;
+            border-bottom: 0;
+            padding: 12px 0 12px 20px;
+            width: 673px;
+            padding-right: 40px;
+            letter-spacing: 0.02em;
+            @include tab {
+                padding: 14px 0 14px 28px;
+            }
+            @include sp {
+                width: 100%;
+                display: inline-block;
+                padding: 6px 10px;
+                padding-right: 0;
+            }
+
+            
+        }
+
+        tr:last-child {
+            display: none;
+            @include tab {
+                display: block;
+            }
+            @include sp {
+                display: block;
+            }
+        }
+
+        .u-td4 {
+            @include tab {
+                padding-top: 12px;
+            }
+        }
+
+        .u-td5 {
+            @include tab {
+                padding-top: 12px;
+            }
+        }
+
+        .u-th6 {
+            @include tab {
+                padding-top: 12px;
+            }
+        }
+
+        .u-td6 {
+            @include tab {
+                padding-top: 12px;
+            }
+        }
+
+        .u-th7 {
+            padding-bottom: 11px;
+        }
+        
+        .u-td7 {
+            padding-bottom: 11px;
+        }
+
+        .u-th8 {
+            @include tab {
+                padding-top: 16px;
+            }
+        }
+
+        .u-td8 {
+            padding-bottom: 14px;
+            @include tab {
+                padding-bottom: 5px;
+                padding-left: 33px;
+            }
+        }
+
+        .u-td9 {
+            padding-bottom: 17px;
+            @include tab {
+                padding-bottom: 12px;
+                padding-top: 24px;
+            }
+        }
+
+        .u-td10 {
+            @include tab {
+                padding-bottom: 11px;
+            }
+        }
+
+        .u-th15 {
+            padding-bottom: 8px;
+        }
+        
+        .u-td15 {
+            padding-bottom: 8px;
+        }
+
+        .u-td16 {
+            padding-bottom: 16px;
+            @include tab {
+                padding-bottom: 33px;
+                line-height: 1.7;
+            }
+        }
+    }
+}
